@@ -1,0 +1,131 @@
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+
+.img-name {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.head img {
+  border-radius: 15px 15px 0 0;
+}
+
+.img-name img {
+  border-radius: 100%;
+  border: 5px solid #fff;
+  position: absolute;
+  top: -50px;
+}
+
+.img-name h1 {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: hsl(229, 23%, 23%);
+}
+
+.img-name h1 span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.img-name p {
+  color: hsl(0, 0%, 59%);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: hsl(0, 0%, 59%);
+  margin-top: 10px;
+}
+
+.info div h2 {
+  margin-top: 30px;
+  font-size: 21px;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 0;
+}
+
+.info div p {
+  font-size: 11px;
+  color: hsl(0, 0%, 59%);
+  margin-top: 7px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+
+footer { 
+  font-size: 16px; 
+  text-align: center; 
+}
+
+footer a { 
+  color: hsl(229, 23%, 23%);
+  text-decoration: overline;
+}
+
+footer a:hover {
+  color: rgb(190, 0, 0);
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: none;
+  }
+
+  body {
+    background-position: right 45vw bottom 40vh, left 40vw top 45vh;
+  }
+  main {
+    width: 90%;
+  }
+
+  .head {
+    width: 100%;
+  }
+  .head img {
+    width: 100%;
+  }
+}
